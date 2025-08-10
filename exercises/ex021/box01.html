@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box models</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /*border-width: 10px;*/
+            /*border-style: solid;*/
+            /*border-color: darkslategray;*/
+
+            border: 10px solid darkslategray;
+
+            /*padding-top: 10px;*/
+            /*padding-right: 10px;*/
+            /*padding-left: 10px;*/
+            /*padding-bottom: 10px;*/
+
+            padding: 10px; /*TOP, RIGHT, BOTTOM, LEFT*/
+
+            /*margin-top: 20px;*/
+            /*margin-right: 20px;*/
+            /*margin-bottom: 40px;*/
+            /*margin-left: 20px;*/
+
+            /*margin: auto;  to centralize */
+
+            margin: 20px auto 40px auto; /*like padding*/
+
+            /*outline-width: 5px;*/
+            /*outline-style: dashed;*/
+            /*outline-color: salmon;*/
+
+            outline: 5px dashed salmon;
+        }
+
+        a {
+            border-width: 10px;
+            border-color: red;
+            border-style: double;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box level example</h1>
+    <p>Paragraphs are too examples of box-level, but <a href="#">links are examples of boxes inline-level</a>. Let's see how it works</p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>External Fonts</title>
+    <style>
+        @font-face {
+            font-family: RapidoRacers;
+            src: url("fonts/RapidoRacers.otf") format("opentype"), url("fonts/RapidoRacers.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+            /*
+                format() types
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+             */
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1  {
+            font-family: "RapidoRacers", "Times New Roman";
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Title</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aliquid aperiam dolor dolore ea eius eligendi fuga incidunt inventore nam, neque nesciunt odio pariatur, quisquam saepe totam velit veritatis!</p>
+</body>
+</html>

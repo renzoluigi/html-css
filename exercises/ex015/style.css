@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body {
+    background-color: green;
+    font-size: 20px;
+    font-family: Monocraft;
+}
+h1 {
+    background-color: darkgreen;
+    color: whitesmoke;
+    font-size: 2em;
+}
+h2 {
+    color: red;
+    font-size: 1.2em;
+}
+p {
+    color: blue;
+    text-align: justify;
+}

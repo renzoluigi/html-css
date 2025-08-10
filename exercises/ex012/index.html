@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Videos on HTML5.</title>
+</head>
+<body>
+    <h1>Inserting some local-hosted videos</h1>
+    <p>This video is hosted on my own server</p>
+    <!-- Consuming data from a server (caution to this) -->
+    <video preload="metadata" controls width="560" poster="media/img.png" autoplay loop> <!-- Looks like audio and picture -->
+        <source src="media/my_video.mp4" type="video/mp4"> <!-- Priority by order -->
+        <source src="media/my_video.mkv" type="video/mkv">
+        <source src="media/my_video.webm" type="video/webm">
+        <source src="media/my_video.ogv" type="video/ogg">
+        <p>Your navigator doesn't have support for video playback.</p>
+    </video>
+
+    <h1>Inserting videos from YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=FESXkfIC4H9_KEko"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+             clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Inserting videos from Vimeo</h1>
+    <div style="">
+        <iframe src="https://player.vimeo.com/video/267490452?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture;
+                 clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                title="Character Animation Reel"></iframe></div>
+</body>
+</html>

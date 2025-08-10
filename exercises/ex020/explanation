@@ -1,0 +1,10 @@
+pseudo-classes -> behavior of elemetents
+a:hover a:active a:visited
+pseudo-elements
+a::after
+
+#  = id
+.  = class
+:  = pseudo-class
+:: = pseudo-element
+>  = children

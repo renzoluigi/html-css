@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Medias in HTML5</title>
+</head>
+<body>
+    <h1>Dynamic images</h1>
+    <p>Try to open this site on some different devices
+        or open on your navigator</p>
+    <picture> <!-- flex images based on size -->
+        <source media="(max-width: 750px)" srcset="images/small_image.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/medium_image.png" type="image/png">
+        <img src="images/big_image.png" alt="Flex image">
+    </picture>
+
+    <h1>Playing audios</h1>
+    <p>Let's learn to play audio on HTML5.</p>
+    <audio src="media/happy_mistake.mp3" controls autoplay></audio> <!-- MP3 OGG WAV -->
+    <audio preload="metadata" autoplay controls>
+        <source src="media/guanacast-33.mp3" type="audio/mpeg">
+        <source src="media/guanacast-33.wav" type="audio/wav">
+        <source src="media/guanacast-33.ogg" type="audio/ogg">
+        <p>Unfortunately, your navigator cannot play the audio.
+            <a href="media/guanacast-33.mp3">Click here to download your file MP3</a></p>
+        <!-- Only appears if the navigator isn't compatible -->
+    </audio>
+</body>
+</html>

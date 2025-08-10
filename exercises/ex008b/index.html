@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Other formats</title>
+</head>
+<body>
+    <h1>Other formats / Pre-formatting</h1>
+    <h2>Source code</h2>
+    <p>The command <code>document.getElementById("test")</code>
+        is written in the language JavaScript.</p>
+    <pre>
+        <code>
+    num = int(input("Type an integer number:"))
+    if num % 2 == 0:
+        print(f"The number {num} is even."
+    else:
+        print(f"The number {num} is odd.")
+    print("Program end.")
+        </code>
+    </pre>
+    <h2>Simple quotes</h2>
+    <p>Like a father of a friend says: <q>the computer
+    is a donkey too fast.</q> (semantic)</p> <!-- auto add quotation marks -->
+    <h2>Complete quotes</h2>
+    <p>According to Jeff Noble, in his book "HTML for lays"</p>
+    <blockquote cite="https://books.google.com.br/
+    books?id=E8ZtDwAAQBAJ&hl=pt-BR&source=gbs_navlinks_s"> <!-- to create an inner reference -->
+        The difference between inline elements and a text block
+        is important. The elements HTML in this chapter describe
+        the text block.
+    </blockquote>
+    <h2>Abbreviations</h2>
+    <p>I'm studying <abbr title = "HyperText Markup Language">HTML</abbr> and
+        <abbr title="Cascading Style Sheets">CSS</abbr>. I'm loving!</p>
+    <h2>Inverted text</h2>
+    <p><bdo dir="rtl">I'm leaning to create things in HTML</bdo></p>
+</body>
+</html>
