@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: IDroid;
+    src: url("fonts/IDroid.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --background: #c5ebd6;
+    --color1: #83e1ad;
+    --color2: #3ddc83;
+    --color3: #2fa866;
+    --color4: #1a5c37;
+    --color5: #063d1e;
+
+    --main-font: Arial, Helvetica, sans-serif;
+    --highlight-font: "Bebas Neue", sans-serif;
+    --android-font: "Idroid", cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--background);
+    font-family: var(--main-font);
+    margin: auto;
+}
+
+header {
+    padding-top: 40px;
+    background-image: linear-gradient(var(--color3), var(--color5));
+    color: white;
+    height: auto;
+    min-width: 320px;
+    min-height: 150px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 25px;
+    font-family: var(--highlight-font);
+    text-shadow: 2px 2px 0px rgba(0, 0 , 0, 0.5);
+    font-weight: normal;
+}
+
+header > p {
+    margin: 0;
+    font-size: 1.2em;
+    padding: 15px 0 50px 0;
+    max-width: 500px;
+    margin: auto;
+    text-shadow: 2px 2px 0 rgba(0, 0 , 0, 0.5);
+    margin-bottom: 20px;
+}
+
+nav {
+    text-align: left;
+    box-shadow: 0px 7px 9px rgba(0, 0 , 0, 0.5);
+    margin: 0;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--color1);
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: var(--color3);
+    color: var(--color5);
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+main {
+    background-color: white;
+    margin: 0 auto;
+
+    min-width: 300px;
+    max-width: 800px;
+    padding: 20px;
+    text-align: justify;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.50);
+    border-radius: 10px 0;
+}
+
+main p {
+    margin: 15px 0;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main h1 {
+    margin: 0;
+    color: var(--color5);
+    font-family: var(--android-font);
+    font-size: 1.8em;
+}
+
+main h2 {
+    background-image: linear-gradient(to right, var(--color1), transparent);
+    margin: 0;
+    color: var(--color4);
+    text-indent: 8px;
+    font-family: var(--android-font);
+    font-size: 1.3em;
+}
+
+main a {
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--color1);
+    color: var(--color5);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--color4);
+}
+
+main a::after {
+    content: "\00A0\1F517";
+    color: var(--color4);
+}
+
+main strong {
+    color: var(--color4);
+    font-weight: bold;
+}
+
+img,
+picture img {
+    max-width: 100%;
+}
+
+img#bugdroid {
+    margin: auto;
+    display: block;
+    max-width: 350px;
+}
+
+.player {
+    background-color: var(--color5);
+    margin: 0 -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+.player > iframe {
+    position: absolute;
+    top: 5%;
+    bottom: 5%;
+    height: 90%;
+    width: 90%;
+}
+
+
+aside {
+    margin: 5px 0;
+    background-color: #61b27f;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.29);
+}
+
+aside ul {
+    list-style-type: "\2714\00A0\00A0"; /* emoji code + 2 spaces */
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside > h3 {
+    color: white;
+    font-weight: bold;
+    background-color: green;
+    margin: -10px -10px 0 -10px;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+aside > p {
+    margin: 0;
+}
+
+aside abbr {
+    color: black;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: green;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 10px;
+}
+
+footer > p {
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: underline;
+}
